@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>вата лі я?</title>
+</head>
+<body>
+
+
+<p>Input your age and click the button:</p>
+<form id="myForm">
+<input id="suk"  value=""  required="" />
+<input id="liya"  value="" required=""/>
+<input id="mama"  value="" required=""/>
+</form>
+<button onclick="myFunction()">Try it</button>  <input type="button" onclick="reset()" value="Reset form">
+
+<p>You are: <span id="demo"></span></p>
+
+
+
+<script>
+function myFunction() {
+	var x=0;
+    var suk, liya, mama, vata;
+    suk = document.getElementById("suk").value;
+    liya = document.getElementById("liya").value;
+    mama = document.getElementById("mama").value;
+
+
+
+if (suk==3 && liya==3 && mama==3){x=3;}
+	
+
+
+    document.getElementById("demo").innerHTML = x;
+}
+
+
+</script>
+
+
+
+<script>
+	
+function reset() {
+    document.getElementById("myForm").reset();
+     document.getElementById("demo").innerHTML='';
+}
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
